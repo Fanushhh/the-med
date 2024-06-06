@@ -2,32 +2,127 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url('/fonts/HankenGrotesk-Regular.woff2') format('woff2'),
+       url('/fonts/HankenGrotesk-Regular.woff2') format('woff');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url('/fonts/HankenGrotesk-Bold.woff2') format('woff2'),
+       url('/fonts/HankenGrotesk-Bold.woff') format('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url('/fonts/HankenGrotesk-Italic.woff2') format('woff2'),
+       url('/fonts/HankenGrotesk-italic.woff') format('woff');
+       font-style: italic;
+}
+
+@font-face{
+  font-family:'Libre Baskerville';
+  src: url('/fonts/LibreBaskerville-Regular.woff2') format('woff2'),
+       url('/fonts/LibreBaskerville-Regular.woff') format('woff');
+}
+@font-face{
+  font-family:'Libre Baskeville';
+  src: url('/fonts/LibreBaskerville-Bold.woff2') format('woff2'),
+       url('/fonts/LibreBaskerville-Bold.woff') format('woff');
+}
+:root{
+  --font-heading:'HK Grotesk', sans-serif;
+  --font-body:'Libre Baskerville', serif;
+  --fs-heading:36px;
+  --fs-body:16px;
+  --fs-small:14px;
+  --accent:#D3427C;
+  --accent-hover:#be2c50;
+  --primary:#E0C7B1;
+  --primary-hover:#bba592;
+
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
+  font-family: 'HK Grotesk';
+}
+h1{
+  
+  font-size:var(--fs-heading);
+
+}
+.btn{
+  font-size:24px;
+}
+
+p{
+  font-family:'Libre Baskerville';
+  
+}
+
+.heroSection{
+  /*add a color overlay on top of the image */
+
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url('https://site.themed.ro/uploads/images/GKU7-themed.jpg') ;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+.dropdown li{
+  color:black;
+}
+a{
+  border-bottom:2px solid transparent;
+  width: fit-content;
+}
+a:hover{
+  border-bottom: 2px solid var(--accent);
+  border-radius: 0;
+
+}
+.navbar{
+  z-index: 1000;
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  
+}
+.swiper{
+  overflow: visible;
+}
+.perkIcon{
+  width: 45;
+  height: 45px;
+  fill:var(--accent);
+}
+.swiper-wrapper{
+  padding:2rem 0;
+}
+.swiper-pagination{
+  bottom: 0 !important;
+}
+footer a:hover{
+  color:var(--primary)!important;
+  
+  border:none;
+
+}
+footer svg:hover{
+  fill:var(--primary);
+}
+.footer{
+  grid-auto-flow: row;
+  place-items: start;
+}
+@media (min-width:60rem){
+  .footer{
+    grid-auto-flow: column;
+    place-items: start;
   }
+  
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
