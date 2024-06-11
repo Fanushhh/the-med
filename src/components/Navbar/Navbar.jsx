@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { NavLink } from "../NavLink/NavLink";
 let movingNavStyles = {
@@ -13,23 +13,31 @@ let staticNavStyles = {
   backgroundColor: "transparent",
   color: "white",
 }
+
 const pagesWithWhiteNav = ["blog", "informatii-pacienti", "foto-clinici"];
 
 export const Navbar = () => {
   const path = usePathname();
   let isWhiteNav = pagesWithWhiteNav.includes(path.split("/")[2]);
-  const [scrollYPosition, setScrollYPosition] = React.useState(0);
+  const [scrollYProgress, setScrollYProgress] = React.useState(0);
+  
   const [menuState, setMenuState] = React.useState("closed");
 
   React.useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScrollYPosition(window.scrollY);
-    });
-  }, []);
+      setScrollYProgress(window.scrollY);
+    })
+    return () => {
+      window.removeEventListener("scroll", () => {
+        setScrollYProgress(window.scrollY);
+      })
+    }
+  
+  },);
   return (
     <motion.div
-      className="navbar relative text-white px-4 py-2 font-Heading !text-2xl "
-      style={isWhiteNav ? movingNavStyles : scrollYPosition > 75 ? movingNavStyles : staticNavStyles}
+      className="navbar relative px-4 py-2 font-Heading !text-2xl bg-white text-black"
+      style={scrollYProgress > 0 ? movingNavStyles : staticNavStyles }
     >
       <div className="flex-1">
         <Link href="/" className="btn btn-ghost">Themed.ro</Link>
@@ -45,7 +53,7 @@ export const Navbar = () => {
 
             >
               Despre noi
-              <svg className="w-4 ml-2" style={{fill: scrollYPosition > 75 || isWhiteNav ? "black" : "white",}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+              <svg className="w-4 ml-2" style={{fill: scrollYProgress > 0 || isWhiteNav ? "black" : "white",}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
             </Link>
             <ul
               tabIndex={0}
@@ -79,14 +87,14 @@ export const Navbar = () => {
               className="btn p-0 m-1"
             >
               Servicii
-              <svg className="w-4 ml-2" style={{fill: scrollYPosition > 75 || isWhiteNav ? "black" : "white",}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+              <svg className="w-4 ml-2" style={{fill: scrollYProgress > 0 || isWhiteNav ? "black" : "white",}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
             </Link>
             <ul
               tabIndex={0}
               className="dropdown-content z-[1] menu p-4 shadow bg-base-100 rounded-box w-[400px] gap-3 !text-2xl "
             >
               <li>
-                <Link href="#">Protetică și estetică dentară</Link>
+                <Link href="/info/protetica-si-estetica-dentara">Protetică și estetică dentară</Link>
               </li>
               <li>
                 <Link href="#">Implant dentar imediat</Link>
@@ -183,7 +191,7 @@ export const Navbar = () => {
               className=" z-[1] menu p-4 shadow  rounded-box w-full gap-3 !text-xl capitalize text-white"
             >
               <li>
-              <NavLink setMenuState={setMenuState} href="#">Protetică și estetică dentară</NavLink>
+              <NavLink setMenuState={setMenuState} href="/info/protetica-si-estetica-dentara">Protetică și estetică dentară</NavLink>
               </li>
               <li>
               <NavLink setMenuState={setMenuState} href="#">Implant dentar imediat</NavLink>

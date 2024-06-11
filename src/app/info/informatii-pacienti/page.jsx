@@ -1,4 +1,5 @@
 import { InfoAccordion } from "@/components/InfoAccordion/Accordion";
+import { faq } from "@/components/InfoAccordion/accordionData";
 import { Testimonials } from "@/components/Testimonials/Testimonials";
 
 export default function InfoPage() {
@@ -8,7 +9,7 @@ export default function InfoPage() {
         <h1>Informatii pacienti</h1>
         <p>Intrebarile tale, raspunsurile noastre</p>
       </div>
-      <InfoAccordion />
+      <InfoAccordion data={faq} isSteps={false}/>
       <Testimonials />
     </main>
   );

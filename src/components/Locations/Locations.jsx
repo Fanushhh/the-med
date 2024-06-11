@@ -7,12 +7,12 @@ export const Locations = () => {
   const locationsRef = React.useRef(null);
   const isInView = useInView(locationsRef, { margin: "-100px 0px -100px 0px" });
   return (
-    <motion.section  className="my-10 overflow-clip">
-      <h2 className="text-4xl text-[var(--accent)] text-center mt-6 mb-10">
-        Te așteptăm în clinicile dentare The Med <br />
+    <motion.section  className="my-10 overflow-clip p-4">
+      <h2 className="text-4xl text-[var(--accent)] text-center mt-6 mb-10 md:max-w-[900px] md:mx-auto">
+        Te așteptăm în clinicile dentare The Med
         pentru a-ți reda zâmbetul pierdut!
       </h2>
-      <motion.div initial={{y:150, opacity:0}} transition={{duration:1}} animate={isInView ? {y:0, opacity:1}: {}} ref={locationsRef} className="flex flex-col items-center md:flex-row md:just justify-center p-4 gap-8">
+      <motion.div initial={{y:150, opacity:0}} transition={{duration:1}} animate={isInView ? {y:0, opacity:1}: {}} ref={locationsRef} className="flex flex-col items-center md:flex-row md:just justify-center gap-8">
         <div className="  grid grid-cols-1 justify-items-center sm:grid-cols-2 gap-4 w-[580px] max-w-full px-50px">
           <Image
             src="https://site.themed.ro/images/m1.jpg"

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const Hero = ({ heroHeading, heroSubHead, hasUpper }) => {
+export const Hero = ({ heroHeading, heroSubHead, hasUpper, subTitle }) => {
   return (
     <section className={`relative min-h-screen heroSection text-white flex items-center text-center md:text-left md:items-end p-4 md:py-[100px] md:px-[80px]`}>
     <Image src="https://newsite.themed.ro/uploads/home-hero.jpg" className="absolute top-0 left-0 h-full w-full object-cover brightness-50" width={1920} height={1080} alt="poza principala cu echipa The Med"/>
@@ -9,7 +9,7 @@ export const Hero = ({ heroHeading, heroSubHead, hasUpper }) => {
           {heroHeading}
           <br /> {hasUpper ? <span className="uppercase">{heroSubHead}</span> : heroSubHead}
         </h1>
-        
+        <p className="text-xl my-4">{subTitle}</p>
         <div className="flex flex-col items-center justify-start gap-4 mt-4 md:flex-row">
           <button className="bg-[var(--accent)] px-4 py-2 font-bold hover:bg-[var(--accent-hover)] rounded text-xl">
             Programare online
