@@ -12,7 +12,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "hero-img": "linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url('https://newsite.themed.ro/uploads/home-hero.jpg');",
+        "help-img": "linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url('https://site.themed.ro/images/gallery3.jpg');",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },

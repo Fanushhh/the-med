@@ -41,7 +41,10 @@
   --accent-hover:#be2c50;
   --primary:#E0C7B1;
   --primary-hover:#bba592;
-
+ --white-hover: #f5f5f5be;
+}
+body{
+  overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6{
   font-weight: bold;
@@ -64,10 +67,10 @@ p{
 .heroSection{
   /*add a color overlay on top of the image */
 
-  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url('https://site.themed.ro/uploads/images/GKU7-themed.jpg') ;
+  
   background-size:cover;
   background-repeat:no-repeat;
-  background-position: center;
+  background-position: 55%;
 }
 .dropdown li{
   color:black;
@@ -80,6 +83,17 @@ a:hover{
   border-bottom: 2px solid var(--accent);
   border-radius: 0;
 
+
+}
+.three-box-layout{
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+}
+.three-box-layout ul{
+  list-style-type: disc;
+  margin-left:2rem;
+  font-family: var(--font-body);
 }
 .navbar{
   z-index: 1000;
@@ -116,6 +130,51 @@ footer svg:hover{
 .footer{
   grid-auto-flow: row;
   place-items: start;
+}
+.grid-container{
+  display:flex;
+  flex-wrap:wrap;
+  gap:2rem;
+  justify-content: center;
+  padding:1rem;
+  
+}
+
+@media (min-width:900px){
+  .grid-container{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:2rem;
+    justify-items: center;
+    margin:3rem auto;
+    
+  }
+  .grid-item:nth-child(1), .grid-item:nth-child(2), .grid-item:nth-child(3){
+   grid-column: span 2;
+    
+  }
+  .grid-item:nth-child(4), .grid-item:nth-child(5){
+    grid-row:2;
+    grid-column: span 3;
+    
+  }
+  
+  .grid-item:nth-child(6), .grid-item:nth-child(7), .grid-item:nth-child(8){
+    grid-column: span 2;
+    grid-row:3;
+    
+  }
+  .grid-item:nth-child(4), .grid-item:nth-child(1), .grid-item:nth-child(6){
+    justify-self: end;
+  }
+  .grid-item:nth-child(3), .grid-item:nth-child(5), .grid-item:nth-child(8){
+    justify-self: start;
+  }
+  .grid-item{
+    width: 100%;
+    max-width: 300px;
+  }
 }
 @media (min-width:60rem){
   .footer{

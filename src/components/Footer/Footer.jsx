@@ -81,10 +81,10 @@ export const Footer = () => {
         </aside>
         <nav>
           <h6 className="text-2xl pb-4 mb-4 border-b-2 border-[var(--accent)]">Informatii utile</h6>
-          <Link href="#" className=" ">Filozofia The Med</Link>
-          <Link href="#" className=" ">Tehnologii</Link>
-          <Link href="#" className=" ">Preturi</Link>
-          <Link href="#" className=" ">Echipa</Link>
+          <Link href="info/folosofia-the-med" className=" ">Filosofia The Med</Link>
+          <Link href="info/tehnologii-digitale" className=" ">Tehnologii</Link>
+          <Link href="/preturi" className=" ">Preturi</Link>
+          <Link href="/info/echipa-the-med" className=" ">Echipa</Link>
         </nav>
         <nav>
           <h6 className="text-2xl pb-4 mb-4 border-b-2 border-[var(--accent)]">Servicii</h6>

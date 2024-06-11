@@ -4,7 +4,7 @@ import React from "react";
 
 export const Perks = () => {
   const perksRef = React.useRef(null);
-  const isInView = useInView(perksRef, {margin:'-100px'});
+  const isInView = useInView(perksRef, {margin:'500px 0px -250px 0px'});
   return (
     <motion.section className="p-4">
       <h2 ref={perksRef} className=" text-2xl md:text-5xl my-8 text-center font-bold">

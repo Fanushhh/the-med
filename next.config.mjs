@@ -14,6 +14,12 @@ const nextConfig = {
                 hostname: 'site.themed.ro',
                 port:'',
                 pathname:'/images/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'newsite.themed.ro',
+                port:'',
+                pathname:'/uploads/**',
             }
         ]
     }
