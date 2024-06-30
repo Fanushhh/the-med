@@ -4,9 +4,16 @@ import { TechStack } from "@/components/TechStack/TechStack";
 import { ThreeBoxLayout } from "@/components/ThreeBoxLayout/ThreeBoxLayout";
 import { Help } from "@/components/Help/Help";
 
+export const metadata = {
+  title: "Tehnologii Dentare de Ultimă Generație la The Med",
+  description: "Descoperă inovațiile tehnologice din stomatologie la The Med. Folosim echipamente de ultimă generație pentru a oferi tratamente precise și eficiente. Află cum tehnologia modernă îți poate îmbunătăți sănătatea orală.",
+}
 const threeBoxLayoutData = [
   {
     title: "EMS - Guided Biofilm Therapy",
+    id: "EMSProp",
+    bgColor:"bg-black text-white",
+    titleStyling: "text-black text-center",
     description:
       "AIRFLOW® Prophylaxis Master este cea mai recentă inovație EMS pentru „Terapia ghidată a biofilmului” și reprezintă o soluție unică pentru prevenirea cariilor, având deopotrivă și rezultate uimitoare după finalizarea ședințelor de profilaxie, la fiecare șase luni.",
     bigDescription: [
@@ -15,11 +22,15 @@ const threeBoxLayoutData = [
       "Pulberea AIRFLOW PLUS îndepărtează confortabil și eficient biofilmul, petele și tartrul incipient supra și subgingival, reducând nevoia de folosire a altor instrumente adiționale folosite în practica stomatologică veche.",
       "Aparatul de detartraj NO PAIN (fără durere) oferă o experiență foarte plăcută pacientului deoarece acesta nu atinge suprafața dentară, așadar pacientul nu simte disconfort, vibrații care îi pot declanșa o stare anxioasă.",
     ],
-    imgUrl: "https://site.themed.ro/uploads/images/G2O9-hero_tehnologii.jpg",
+    imgUrl: "https://newsite.themed.ro/uploads/tehnologii-digitale/three-box-1.png",
     colReversed: false,
+    isEven:true,
   },
   {
+    id: "LaserulDentarElexxionNano",
     title: "Laserul dentar Elexxion Nano",
+    bgColor:"bg-black text-white",
+    titleStyling: "text-black text-center",
     description:
       "Elexxion Nano 2.0 propune îmbinarea perfectă dintre simplitate și modul individual de lucru, fiind prevăzut cu 40 de aplicații care acoperă tot spectrul tratamentelor dentare cu laser",
     bigDescription: [
@@ -35,21 +46,28 @@ const threeBoxLayoutData = [
       "scurtează durata de tratament și scade numărul de vizite la cabinet",
       "poate fi utilizat pentru managementul durerii, inclusiv în cazul intervențiilor cu implant dentar",
     ],
-    imgUrl: "https://site.themed.ro/uploads/images/G2O9-hero_tehnologii.jpg",
+    imgUrl: "https://newsite.themed.ro/uploads/tehnologii-digitale/three-box-2.png",
     colReversed: true,
+    isEven:true,
   },
   {
+    id: "ScanerulIntraoralMediti700",
     title: "Scanerul intraoral Medit i700",
+    bgColor:"bg-black text-white",
+    titleStyling: "text-black text-center",
     bigDescription: [
       "În cadrul clinicii The Med, alegem să oferim pacienților o experiență cât mai bună, dar și rapiditate în realizarea tratamentelor protetice, fie că este vorba despre fațete, coroane dentare sau proteze fixe pe implanturi.",
       "Scanerul intraoral este folosit pentru preluarea amprentei dentare în mod digital. Acest lucru are avantaje enorme față de amprentele dentare convenționale care sunt mult mai predispuse la erori, pot necesita vizite repetate ale pacientului și nu în ultimul rând sunt mult mai invazive, îngreunând procesul de amprentare în special în cazul pacienților cu reflex de vomă.",
       "Utilizarea acestei tehnologii ne ajută în eficientizarea comunicării interne dintre medici și laboratorul dentar, precum și în comunicarea cu pacientul, punând la dispoziția acestuia imagini de înaltă precizie care ajută pacientul să observe problemele pe care le are și să înțeleagă mai ușor planul de tratament propus",
     ],
-    imgUrl: "https://site.themed.ro/uploads/images/G2O9-hero_tehnologii.jpg",
+    imgUrl: "https://newsite.themed.ro/uploads/tehnologii-digitale/three-box-3.png",
     colReversed: false,
+    isEven:true,
   },
   {
+    id:'',
     title: "",
+    bgColor:"bg-black text-white",
     description:
       "Eficiența de neegalat este una din caracteristicile remarcabile ale scanerului intraoral Medit i700. Tehnologia avansată asigură acuratețea datelor scanate și că elementele de protetică dentară se vor potrivi perfect.",
     bigDescription: [
@@ -59,11 +77,15 @@ const threeBoxLayoutData = [
       "De asemenea, scanarea intraorală se folosește atât în tratamentul ortodontic, cât și în tratamentele chirurgicale, prin combinarea tomografiilor digitale realizate cu ajutorul CBCT-ului cu datele scanării intraorale.",
       "Astfel, se pot realiza ghiduri chirurgicale digitale pentru intervențiile cu implanturi dentare care asigură predictibilitatea tratamentului.",
     ],
-    imgUrl: "https://site.themed.ro/uploads/images/G2O9-hero_tehnologii.jpg",
-    colReversed: false,
+    imgUrl: "https://newsite.themed.ro/uploads/tehnologii-digitale/three-box-4.png",
+    colReversed: true,
+    isEven:true,
   },
   {
+    id: "MicroscopulDentarCJOptikAdvancedOptomic5",
     title: "Microscopul dentar CJ Optik Advanced, Optomic 5",
+    titleStyling: "text-black text-center",
+   bgColor:"bg-black text-white",
     description:
       "Medicii noștri utilizează microscopul dentar CJ Optik Advanced, Optomic 5 în tratamentele de canal, în cazul restaurărilor estetice cu compozit din zona frontală, în șlefuirea pentru fațete dentare sau a altor lucrări protetice, dar și în tratamentul cariilor pentru o precizie ridicată a tratamentului.",
     bigDescription: [
@@ -79,13 +101,17 @@ const threeBoxLayoutData = [
       "Ușurează comunicarea cu pacientul prin capacitatea microscopului de a documenta intervenția",
       "Permite eliminarea eficientă a infecției din canalele radiculare, scâzând șansele de retratament",
     ],
-    imgUrl: "https://site.themed.ro/uploads/images/G2O9-hero_tehnologii.jpg",
-    colReversed: true,
+    imgUrl: "https://newsite.themed.ro/uploads/tehnologii-digitale/three-box-5.png",
+    colReversed: false,
+    isEven:true,
   },
   {
+    id: "DigitalSmileDesign",
     title: "Digital Smile Design, tehnologie Smile Cloud",
+    bgColor:"bg-black text-white",
+    titleStyling: "text-black text-center",
     description:
-      "AAceastă aplicație care folosește inteligența artificială va pune la dispoziția medicului o bibliotecă cu zeci de mii de zâmbete din care poate alege cea mai bună și naturală soluție pentru restaurarea zâmbetului tău.",
+      "Această aplicație care folosește inteligența artificială va pune la dispoziția medicului o bibliotecă cu zeci de mii de zâmbete din care poate alege cea mai bună și naturală soluție pentru restaurarea zâmbetului tău.",
     bigDescription: [
       "Cum ar fi pentru o clipă să ne imaginăm că putem vedea cum va arăta zâmbetul nostru nou dinainte ca medicul să înceapă tratamentul propriu-zis?",
       "În clinica stomatologică The Med acest lucru este posibil cu ajutorul tehnologiei DSD (Digital Smile Design) oferită prin aplicația Smile Cloud. Astfel, această tehnologie ajută la preconfigurarea zâmbetului tău pentru a-ți permite să vezi cum vor arăta dinții tăi noi la finalul tratamentului.",
@@ -93,11 +119,15 @@ const threeBoxLayoutData = [
       "Această abordare este eficientă și în comunicarea dintre medicul protetician The Med și pacient deoarece propunere de tratament este mult mai ușor înțeleasă și acceptată de pacient.",
       "De asemenea, este un instrument extrem de eficient și în colaborarea dintre medic și tehnicianul dentar pentru a obține lucrări protetice cu estetică naturală, impecabile.",
     ],
-    imgUrl: "https://site.themed.ro/uploads/images/G2O9-hero_tehnologii.jpg",
-    colReversed: false,
+    imgUrl: "https://newsite.themed.ro/uploads/tehnologii-digitale/three-box-6.png",
+    colReversed: true,
+    isEven:true,
   },
   {
+    id: "GhidulChirurgicalDigital",
     title: "Ghidul chirurgical digital",
+    titleStyling: "text-black text-center",
+    bgColor:"bg-black text-white",
     description:
       "Ghidurile chirurgicale sunt instrumente de planificare care ajută medicul specialist să identifice cu precizie zonele sau unghiurile potrivite pentru implantare, ceea ce este esențial pentru inserarea cu precizie a unui implant în maxilar și pentru reușita tratamentului.",
     bigDescription: [
@@ -112,11 +142,15 @@ const threeBoxLayoutData = [
       "Eficientizează comunicarea medicului cu pacientul, îndeosebi în cazul pacientului anxios care are nevoie de predictibilitate și înțelegere profundă a tratamentului",
       "Reduce riscul apariției anumitor complicații",
     ],
-    imgUrl: "https://site.themed.ro/uploads/images/G2O9-hero_tehnologii.jpg",
-    colReversed: true,
+    imgUrl: "https://newsite.themed.ro/uploads/tehnologii-digitale/three-box-7.png",
+    colReversed: false,
+    isEven:true,
   },
   {
+    id: "Cadiax4",
     title: "Piezosurgery: chirurgie ultrasonică",
+    bgColor:"bg-black text-white",
+    titleStyling: "text-black text-center",
     bigDescription: [
       "Piezochirurgia, sau chirurgia ultrasonică, folosește vibrația ultrasonică modulată pentru a permite tăierea controlată a structurilor dentare osoase. Structurile osoase delicate pot fi tăiate cu ușurință și cu mare precizie, fără distrugerea țesuturilor moi.",
       "Tehnologia oferă chirurgilor precizie, siguranță, ergonomie perfectă și cea mai înaltă calitate a procedurii, reducând, deopotrivă, disconfortul postoperator pentru pacienți.",
@@ -129,23 +163,26 @@ const threeBoxLayoutData = [
       "mai puține complicații chirurgicale în comparație cu instrumentele chirurgicale tradiționale",
     ],
 
-    imgUrl: "https://site.themed.ro/uploads/images/G2O9-hero_tehnologii.jpg",
-    colReversed: false,
+    imgUrl: "https://newsite.themed.ro/uploads/tehnologii-digitale/three-box-8.png",
+    colReversed: true,
+    isEven:true,
   },
 ];
 export default function TechPage() {
   return (
-    <main>
+    <main className="">
       <Hero
+      heroImg="https://newsite.themed.ro/uploads/tehnologii-digitale/tehno-hero.jpg"
         heroHeading="Tehnologii digitale"
         heroSubHead="pentru zâmbete perfecte"
       />
       <TechStack />
-          {threeBoxLayoutData.map((data, index) => (
-            <ThreeBoxLayout key={index} {...data} />
-          ))
-            }
-            <Help />
+      <div className="my-10">
+        {threeBoxLayoutData.map((data, index) => (
+          <ThreeBoxLayout key={index} {...data} />
+        ))}
+      </div>
+      <Help />
       <Testimonials />
     </main>
   );

@@ -6,15 +6,16 @@ export const Perks = () => {
   const perksRef = React.useRef(null);
   const isInView = useInView(perksRef, {margin:'500px 0px -250px 0px'});
   return (
-    <motion.section className="p-4">
+    <motion.section className="p-4 ">
       <h2 ref={perksRef} className=" text-2xl md:text-5xl my-8 text-center font-bold">
         Cum ne mentinem promisiunea fata de pacienti
       </h2>
-      <div className="overflow-clip flex flex-wrap md:flex-row justify-center my-20 gap-8 *:w-56 text-center *:gap-4 *:flex *:flex-col ">
+      <div className="overflow-clip min-h-[200px] flex flex-wrap md:flex-row justify-center item-center my-10 gap-8 *:w-56 text-center  *:flex *:flex-col *:items-center ">
         <motion.div
           initial={{ y: 150, opacity: 0 }}
           transition={{ duration: 0.7 }}
           animate={isInView ? { y: 0, opacity: 1 } : { y: 150, opacity: 0}}
+          
         >
           <svg
             className="perkIcon"

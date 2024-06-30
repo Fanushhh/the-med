@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://themed.ro
+
+# Sitemaps
+Sitemap: https://themed.ro/sitemap.xml

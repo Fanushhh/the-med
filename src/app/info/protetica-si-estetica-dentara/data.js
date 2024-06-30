@@ -3,6 +3,7 @@ export const threeBoxLayoutData = [
     title: "Tipuri de lucrări protetice:",
     description:
       "Fațete dentare",
+      bgColor:'bg-[var(--accent)]',
       descriptionStyle:'text-[var(--accent)] text-center text-4xl font-bold font-Heading ',
       titleStyling: 'text-black text-center pb-10',
     listItems: [
@@ -14,13 +15,14 @@ export const threeBoxLayoutData = [
       "Igiena orală se menține ca și în cazul dinților naturali, zilnic, dimineața și seara și igienizări profesionale la fiecare 6 luni",
       "Sunt gata pentru a fi arătate lumii în scurt timp de la prima vizită",
     ],
-    imgUrl: "https://site.themed.ro/uploads/images/G2O9-hero_tehnologii.jpg",
+    imgUrl: "https://newsite.themed.ro/uploads/protetica/protetica-three-1.png",
     colReversed: false,
   },
   {
     title: "Coroane dentare",
     description:
       "",
+      bgColor:'bg-[var(--accent)]',
     listItems: [
       "sunt lucrări protetice cu aspectul similar unei capsule de protecție pentru un dinte natural care a suferit un tratament de canal din cauza unei carii profunde, o fractură sau un alt tip de afecțiune care i-a slăbit structura naturală",
       "sunt utilizate pentru a încărca un implant dentar, pentru a oferi estetică și funcționalitate dintelui nou",
@@ -30,13 +32,14 @@ export const threeBoxLayoutData = [
       "sunt utilizate în punți dentare pentru a înlocui dinți lipsă sau pentru a imobiliza dinți afectați de boala parodontală cu un grad ridicat de mobilitate pe arcadă",
       "fiind realizate din materiale dure, au rezistență crescută la forțele masticatorii",
     ],
-    imgUrl: "https://site.themed.ro/uploads/images/G2O9-hero_tehnologii.jpg",
+    imgUrl: "https://newsite.themed.ro/uploads/protetica/protetica-three-2.png",
     colReversed: true,
   },
   {
     title: "Lucrări protetice pe implanturi",
     description:
       "",
+      bgColor:'bg-[var(--accent)]',
     listItems: [
       "materialele utilizate în clinica dedntară The Med, precum zirconiul și titanul, sun biocompatibile cu organismul",
       "sunt concepute special pentru a îndeplini normele biomecanice ale implanturilor utilizate și a proteja pe termen lung gingia și osul",
@@ -44,11 +47,12 @@ export const threeBoxLayoutData = [
       "pot restaura de la un dinte până la o arcadă dentară completă",
       "se realizează prin strânsa colaborare dintre medicul protetician și tehnicianul dentar ",
     ],
-    imgUrl: "https://site.themed.ro/uploads/images/G2O9-hero_tehnologii.jpg",
+    imgUrl: "https://newsite.themed.ro/uploads/protetica/protetica-three-3.png",
     colReversed: false,
   },
   {
     title: "Lucrările de arcadă, pe implanturi, tip All on 4, cu infrastructură din titan ",
+    bgColor:'bg-[var(--accent)]',
     description:
       "",
     listItems: [
@@ -57,13 +61,14 @@ export const threeBoxLayoutData = [
       "sunt foarte ușoare, o infrastructură din titan pentru o lucrare pe toată arcada cântărind între 5 și 7 grame",
       "lucrările cu infrastructura din titan pot susține dinți din zirconiu, e-max sau compozit, recreând estetica naturală a dinților",
     ],
-    imgUrl: "https://site.themed.ro/uploads/images/G2O9-hero_tehnologii.jpg",
+    imgUrl: "https://newsite.themed.ro/uploads/protetica/protetica-three-4.png",
     colReversed: true,
   },
   {
     title: "Estetica gingivală",
     description:
       "",
+      bgColor:'bg-[var(--accent)]',
       bigDescription:["Pe lângă lucrările estetice realizate la nivelul dinților, pot fi realizate și alte intervenții în scop estetic în cabinetul stomatologic:"],
     listItems: [
       "alungiri coronare în scop estetic, pentru dinții prea scurți sau abrazați, cu scopul de a reintegra dinții  pe arcadă",
@@ -72,7 +77,7 @@ export const threeBoxLayoutData = [
       "refacerea simetriei gingivale prin alungiri coronare sau grefe gingivale ( pentru dinții cu retracții gingivale, sau care au suferit un tratament parodontal)",
     ],
     lastParagraph:"Cu aplicabilitate extinsă în stomatologie, obiectivul de bază al esteticii dentare rămâne sănătatea îndelungată a dinților și gingiilor, astfel încât pacienții să poată zâmbi fără restricții, să poată mânca și comunica fără probleme.",
-    imgUrl: "https://site.themed.ro/uploads/images/G2O9-hero_tehnologii.jpg",
+    imgUrl: "https://newsite.themed.ro/uploads/protetica/protetica-three-5.png",
     colReversed: false,
   },
   

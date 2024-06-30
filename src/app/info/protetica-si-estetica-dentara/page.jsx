@@ -5,6 +5,13 @@ import { threeBoxLayoutData } from "./data";
 import { Testimonials } from "@/components/Testimonials/Testimonials";
 import { ProteticPlan } from "@/components/ProteticPlan/ProteticPlan";
 import { Form } from "@/components/Form/Form";
+import { AnimatedDiv } from "@/components/AnimatedDiv/AnimatedDiv";
+
+export const metadata = {
+  title: "Protetica și Estetica Dentară la The Med - Zâmbetul Perfect pentru Tine",
+  description: "Obține zâmbetul visurilor tale cu serviciile de protetică și estetică dentară de la The Med. Oferim soluții personalizate pentru restaurări dentare de înaltă calitate și estetică superioară. Programează o consultație astăzi.",
+}
+
 const proteticaBenefits = {
   left: [
     "tehnicile mai noi sunt mai puțin invazive",
@@ -23,15 +30,17 @@ export default function Page() {
   return (
     <main>
       <Hero
+        heroImg="https://newsite.themed.ro/uploads/protetica/protetica-hero.jpeg"
         heroHeading="Protetică și"
         heroSubHead="estetică dentară"
         subTitle="Estetică, funcționalitate și încredere într-un singur zâmbet"
       />
-      <section className="bg-[var(--accent)]">
+      <section className=" flex items-center bg-[var(--accent)]">
         <div
-          className={`p-4 md:p-10 max-w-[1320px] check-list *:md:w-1/2 flex $ flex-col-reverse md:flex-row gap-4 mx-auto`}
+          className={`p-4 md:p-10 max-w-[1320px]  justify-center  check-list flex w-full flex-col-reverse md:flex-row gap-4 mx-auto`}
         >
-          <div className="*:mb-4">
+          <div className="*:mb-4 w-full mx-auto">
+          
             <p>
               Zâmbetul de revistă care respectă raportul de aur din lucrările
               lui Leonardo DaVinci este un deziderat în rândul oamenilor din
@@ -59,30 +68,39 @@ export default function Page() {
               deoarece îți asigură încrederea de a zâmbi nestingherit, confortul
               de a vorbi și mesteca și îmbunătățește calitatea vieții.
             </p>
+            
           </div>
-          <div>
-            <img
-              src="https://site.themed.ro/images/filosofia_the_med.jpg"
+          
+          <AnimatedDiv className="max-w-[1000px] w-full h-full">
+            <Image
+              width={1000}
+              height={500}
+              src="https://newsite.themed.ro/uploads/protetica/protetica-1.png"
               alt="imagine protetica dentara"
+              className="max-w-[1000px] w-full h-full object-cover"
             />
-          </div>
+          </AnimatedDiv>
         </div>
       </section>
-      <section className="bg-white">
+      <section className="bg-white  flex items-center md:p-10">
         <div
-          className={`p-4 md:p-10 max-w-[1320px] two-col-layout *:md:w-1/2 flex $ flex-col md:flex-row gap-4 mx-auto`}
+          className={`p-4 md:px-0  items-center justify-between max-w-[1320px] md:*:w-1/2 flex flex-col md:flex-row gap-8 mx-auto`}
         >
-          <div>
-            <img
-              src="https://site.themed.ro/images/filosofia_the_med.jpg"
+          <AnimatedDiv className="md:max-w-[1000px]">
+          <Image
+            width={600}
+            height={500}
+              src="https://newsite.themed.ro/uploads/protetica/protetica-2.png"
               alt="imagine protetica dentara"
+              className=" w-full object-cover"
             />
-          </div>
-          <div className="*:mb-4">
-            <h2 className="md:text-5xl text-2xl md:!mb-10">
+          </AnimatedDiv>
+          <div className="*:mb-4 self-start">
+          
+            <AnimatedDiv element="h2"  className="md:text-5xl text-2xl md:!mb-10 ">
               <span className="text-[var(--accent)]">Protetica dentară</span>,
               mai mult decât estetică și frumusețe
-            </h2>
+            </AnimatedDiv>
             <p>
               Stomatologia estetică este acea ramură a stomatologiei care redă
               și estetica și funcționalitatea zâmbetului, preocupându-se nu doar
@@ -115,22 +133,22 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className=" relative p-4 md:p-20">
+      <section className=" relative p-4 md:p-20 flex items-center">
         <Image
-          src="https://site.themed.ro/images/laborator1.jpg"
-          className="absolute top-0 left-0 h-full z-[-1] w-full object-cover "
+          src="https://newsite.themed.ro/uploads/protetica/diferit.jpg"
+          className="absolute top-0 left-0 h-full z-[-1] w-full object-cover object-[0%_25%] bg-[rgba(255,255,255,0.7)]"
           width={1920}
           height={1080}
           alt="poza principala cu echipa The Med"
         />
         <div className=" p-4 md:p-10 check-list pink bg-[rgba(255,255,255,0.7)] max-w-[1320px] mx-auto">
-          <h2 className=" text-xl md:text-5xl pb-8 ">
+          <AnimatedDiv element="h2" className=" text-xl md:text-5xl pb-8 ">
             <span className="text-[var(--accent)]">
               Ce facem diferit la The Med
             </span>{" "}
             este modul în care abordăm experiența pacientului, deopotrivă
             clinică și personală:
-          </h2>
+          </AnimatedDiv>
           <ul className="*:pb-4">
             <li>
               Un zâmbet nou începe cu etapa de PLANIFICARE - planificarea este
@@ -163,12 +181,13 @@ export default function Page() {
           </ul>
         </div>
       </section>
-      <section>
-        <div className="max-w-[1320px] p-4 md:p-20 mx-auto">
-          <h2 className="text-2xl md:text-5xl mb-6">
+      <section className=" flex items-center">
+        <div className="max-w-[1320px] p-4 md:p-20 lg:px-0  mx-auto relative bg-protetica-bg-tooth bg-cover bg-no-repeat bg-bottom">
+        
+          <AnimatedDiv element="h2" className="text-2xl md:text-5xl mb-6">
             <span className="text-[var(--accent)] ">Protetica dentară</span> nu
             este doar despre dinți albi
-          </h2>
+          </AnimatedDiv>
           <p>
             Tratamentul protetic oferă estetică, funcționalitate și durabilitate
             unui dinte artificial pe suport dentar sau pe implant, care arată,
@@ -225,13 +244,13 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="bg-white">
-        <div className=" p-4 max-w-[1320px] my-10 mx-auto flex flex-col md:flex-row md:*:w-1/2 gap-8">
+      <section className="bg-white flex items-center">
+        <div className=" p-4 max-w-[1320px] my-4 lg:py-20 lg:px-0 mx-auto flex flex-col md:flex-row md:*:w-1/2 gap-8">
           <div className="*:mb-4">
-            <h2 className="text-2xl md:text-5xl ">
+            <AnimatedDiv element="h2" addedDelay={.5} className="text-2xl md:text-5xl ">
               Protetica dentara{" "}
               <span className="text-[var(--accent)]">digitala</span>
-            </h2>
+            </AnimatedDiv>
             <p>
               Progresele în tehnologia dentară permit realizarea mult mai
               rapidă, cu un grad de estetică naturală mult superior a
@@ -274,17 +293,18 @@ export default function Page() {
               beneficiu incontestabil pentru pacienți.
             </p>
           </div>
-          <div>
+          <AnimatedDiv>
             <Image
-              src="https://site.themed.ro/uploads/images/10-26-2023-themed6906-jpg_UQ6C.webp"
+              src="https://newsite.themed.ro/uploads/protetica/protetica-3.png"
               width={600}
               height={400}
               alt="image of a person looking at the camera"
+              className="mx-auto object-cover"
             />
-          </div>
+          </AnimatedDiv>
         </div>
       </section>
-      <section className="my-10">
+      <section className="">
           {
             threeBoxLayoutData.map((data, index) => {
               return (
@@ -296,10 +316,11 @@ export default function Page() {
                   listItems={data.listItems}
                   imgUrl={data.imgUrl}
                   colReversed={data.colReversed}
-                  bgColor="var(--accent)"
+                  bgColor={data.bgColor}
                   checkList="check-list"
                   descriptionStyle={data.descriptionStyle}
                   titleStyling={data.titleStyling}
+                  
                 />
               );
             })

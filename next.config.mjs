@@ -19,7 +19,19 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'newsite.themed.ro',
                 port:'',
-                pathname:'/uploads/**',
+                
+            },
+            {
+                protocol: 'https',
+                hostname: 'plus.unsplash.com',
+                port:'',
+
+            },
+            {
+                hostname:'images.unsplash.com',
+            },
+            {
+                hostname:'dev.themed.ro',
             }
         ]
     }

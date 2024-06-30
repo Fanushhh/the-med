@@ -2,18 +2,18 @@ import Image from "next/image";
 import { AnimatedDiv } from "../AnimatedDiv/AnimatedDiv";
 export const TwoColumn = () => {
   return (
-    <section className="bg-[var(--primary)] flex justify-center">
-      <div className=" overflow-clip my-8 md:my-14 max-w-[1320px] w-full flex *:w-full md:items-start flex-col-reverse md:flex-row items-center justify-center">
-        <AnimatedDiv element="div">
+    <section className=" flex justify-center bg-[var(--primary)] py-10">
+      <div className=" overflow-clip  max-w-[1320px] w-full flex *:w-full flex-col-reverse md:flex-row md:items-center justify-center md:*:w-1/2">
+        <AnimatedDiv element="h-full">
           <Image
-           className="mx-auto mb-4"
+           className="md:h-[600px] w-full object-cover object-center"
             src="https://site.themed.ro/images/filosofia_the_med.jpg"
             width={608}
             height={600}
             alt="Doua persoane una langa cealalta care zambesc la camera"
           />
         </AnimatedDiv>
-        <div className="*:mb-4 md:ml-8 p-4">
+        <aside className=" p-4 md:p-14 *:mb-4  h-full flex flex-col justify-start">
           <p>
             Sunt numeroase motivele pentru care pacienții amână vizita la
             medicul dentist sau ajung prea târziu pe scaunul stomatologic.{" "}
@@ -39,7 +39,7 @@ export const TwoColumn = () => {
             </span>{" "}
             pentru nevoile lor stomatologice, financiare și emoționale.
           </p>
-        </div>
+        </aside>
       </div>
     </section>
   );
