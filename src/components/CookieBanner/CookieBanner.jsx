@@ -43,7 +43,7 @@ export const CookieBanner = () => {
         </>
       )}
       {isVisible && (
-        <div className="fixed bottom-0 left-0 md:bottom-6 md:left-6 z-10 w-full max-w-[500px] flex flex-col bg-slate-200 shadow-md border p-4 rounded md text-gray-600">
+        <div className="fixed bottom-0 left-0 md:bottom-6 md:left-6 z-20 w-full max-w-[500px] flex flex-col bg-slate-200 shadow-md border p-4 rounded md text-gray-600">
           <p className="text-sm mb-2">
             Acest site folosește cookie-uri pentru a îmbunătăți experiența
             utilizatorilor și pentru a analiza traficul folosind Google
