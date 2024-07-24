@@ -16,10 +16,10 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="icon"
-          href="/images/favicon.ico"
+          href="/images/favicon-the-med.ico"
           sizes="any"
         />
-        <link rel="apple-touch-icon" sizes="any" href="/images/favicon.ico"/>
+        <link rel="apple-touch-icon" sizes="any" href="/images/favicon-the-med.ico"/>
         
         
         
