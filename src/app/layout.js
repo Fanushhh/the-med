@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <link
           rel="icon"
           href="/images/favicon.ico"
-          type="image/x-icon"
+          sizes="any"
         />
         <link rel="apple-touch-icon" href="/images/favicon.ico"/>
         <link rel="icon" href="/images/favicon.ico"/>
