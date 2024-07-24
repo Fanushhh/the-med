@@ -14,15 +14,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ro">
       <head>
-       
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
-<link rel="manifest" href="/images/site.webmanifest" />
-        
-        
-        
-      </head>
+  <link rel="icon" href="/images/favicon-the-med.ico" sizes="any" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+  <link rel="manifest" href="/images/site.webmanifest" />
+</head>
+
 
       <body className="relative">
       <CookieBanner />
