@@ -7,20 +7,25 @@ import { CookieBanner } from "@/components/CookieBanner/CookieBanner";
 
 export const metadata = {
   title: "Servicii Stomatologice de Excelență la The Med",
-  description: "Descoperiți excelența în stomatologie la The Med, clinica dvs. de încredere pentru chirurgie orală, parodontologie, igienizare profesională și servicii complete oferite de laboratorul nostru intern. Asigurați-vă un zâmbet sănătos cu tratamente de top într-un mediu confortabil și modern.",
+  description:
+    "Descoperiți excelența în stomatologie la The Med, clinica dvs. de încredere pentru chirurgie orală, parodontologie, igienizare profesională și servicii complete oferite de laboratorul nostru intern. Asigurați-vă un zâmbet sănătos cu tratamente de top într-un mediu confortabil și modern.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="ro">
       <head>
-  <link rel="icon" href="/images/favicon.ico" sizes="any" />
-  <link rel="apple-touch-icon" type="image/x-icon" href="./favicon.ico" sizes="any"/>
-</head>
-
+        <link rel="icon" href="/images/favicon.ico" sizes="any" />
+        <link
+          rel="apple-touch-icon"
+          
+          href="/images/apple-touch-icon.png"
+          
+        />
+      </head>
 
       <body className="relative">
-      <CookieBanner />
+        <CookieBanner />
         <Navbar />
         {children}
         <Footer />
