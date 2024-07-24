@@ -15,12 +15,12 @@ export default function RootLayout({ children }) {
     <html lang="ro">
       <head>
         <link
-          rel="shortcut icon"
+          rel="icon"
           href="/images/favicon.ico"
           type="image/x-icon"
         />
-        <link rel="apple-touch-icon" href="/images/favicon.ico"></link>
-        <link rel="icon" href="/images/favicon.ico"></link>
+        <link rel="apple-touch-icon" href="/images/favicon.ico"/>
+        <link rel="icon" href="/images/favicon.ico"/>
         
         
       </head>

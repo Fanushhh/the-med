@@ -18,11 +18,11 @@ const bucurestiClinic = {
     "https://newsite.themed.ro/uploads/galerie-foto/galerie-buc-thumb-5.jpg",
   ],
   fullSize:[
-    "https://newsite.themed.ro/uploads/galerie-foto/galerie-buc-1.jpeg",
-    "https://newsite.themed.ro/uploads/galerie-foto/galerie-buc-2.jpeg",
-    "https://newsite.themed.ro/uploads/galerie-foto/galerie-buc-3.jpeg",
-    "https://newsite.themed.ro/uploads/galerie-foto/galerie-buc-4.jpeg",
-    "https://newsite.themed.ro/uploads/galerie-foto/galerie-buc-5.jpeg",
+    "https://newsite.themed.ro/uploads/galerie-foto/galerie-buc-1.jpg",
+    "https://newsite.themed.ro/uploads/galerie-foto/galerie-buc-2.jpg",
+    "https://newsite.themed.ro/uploads/galerie-foto/galerie-buc-3.jpg",
+    "https://newsite.themed.ro/uploads/galerie-foto/galerie-buc-4.jpg",
+    "https://newsite.themed.ro/uploads/galerie-foto/galerie-buc-5.jpg",
   ],
   address:["Str. Verzisori, nr. 74, Tineretului", "Luni - Vineri: 9AM–21PM", "40 743 754 125"]
 };
