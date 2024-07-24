@@ -294,7 +294,7 @@ export default function SurgeryPage() {
         </div>
         <AnimatedDiv className="md:max-w-[600px] w-full">
           <Image
-            src="https://newsite.themed.ro/uploads/tooth.png"
+            src="https://newsite.themed.ro/uploads/chirurgie/tooth.png"
             alt="Chirurgie orala"
             width={600}
             height={500}

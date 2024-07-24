@@ -196,7 +196,7 @@ export default function Page() {
         </div>
         <AnimatedDiv className="overflow-hidden w-full p-4">
           <Image
-            src="https://newsite.themed.ro/uploads/parodontologie-3.png"
+            src="https://newsite.themed.ro/uploads/parodontologie/parodontologie-3.png"
             alt="Chirurgie orala"
             width={600}
             height={400}
@@ -342,7 +342,7 @@ export default function Page() {
         </div>
         <AnimatedDiv className="md:max-w-[600px] w-full">
           <Image
-            src="https://newsite.themed.ro/uploads/parodontologie-5.png"
+            src="https://newsite.themed.ro/uploads/parodontologie/parodontologie-5.jpg"
             alt="Parodontologie"
             width={600}
             height={800}

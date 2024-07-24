@@ -31,18 +31,18 @@ const slatinaClinic = {
   id: "clinica-slatina-1",
   name: "Clinica THE MED Slatina",
   imgs: [
-    "https://newsite.themed.ro/uploads/galerie-foto/slatina/slatina-thumb-1.jpg",
-    "https://newsite.themed.ro/uploads/galerie-foto/slatina/slatina-thumb-2.jpg",
-    "https://newsite.themed.ro/uploads/galerie-foto/slatina/slatina-thumb-3.jpg",
-    "https://newsite.themed.ro/uploads/galerie-foto/slatina/slatina-thumb-4.jpg",
-    "https://newsite.themed.ro/uploads/galerie-foto/slatina/slatina-thumb-5.jpg",
+    "https://newsite.themed.ro/uploads/galerie-foto/slatina-thumb-1.jpg",
+    "https://newsite.themed.ro/uploads/galerie-foto/slatina-thumb-2.jpg",
+    "https://newsite.themed.ro/uploads/galerie-foto/slatina-thumb-3.jpg",
+    "https://newsite.themed.ro/uploads/galerie-foto/slatina-thumb-4.jpg",
+    "https://newsite.themed.ro/uploads/galerie-foto/slatina-thumb-5.jpg",
   ],
   fullSize:[
-    "https://newsite.themed.ro/uploads/galerie-foto/slatina/slatina-img-1.jpg",
-    "https://newsite.themed.ro/uploads/galerie-foto/slatina/slatina-img-2.jpg",
-    "https://newsite.themed.ro/uploads/galerie-foto/slatina/slatina-img-3.jpg",
-    "https://newsite.themed.ro/uploads/galerie-foto/slatina/slatina-img-4.jpg",
-    "https://newsite.themed.ro/uploads/galerie-foto/slatina/slatina-img-5.jpg",
+    "https://newsite.themed.ro/uploads/galerie-foto/slatina-img-1.jpg",
+    "https://newsite.themed.ro/uploads/galerie-foto/slatina-img-2.jpg",
+    "https://newsite.themed.ro/uploads/galerie-foto/slatina-img-3.jpg",
+    "https://newsite.themed.ro/uploads/galerie-foto/slatina-img-4.jpg",
+    "https://newsite.themed.ro/uploads/galerie-foto/slatina-img-5.jpg",
   ],
   address:["Strada Prelungirea Pitesti, nr.1B", "Luni - Vineri: 9AM–21PM", "+40 749 381 050"]
 };
