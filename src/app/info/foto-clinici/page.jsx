@@ -24,7 +24,7 @@ const bucurestiClinic = {
     "https://newsite.themed.ro/uploads/galerie-foto/galerie-buc-4.jpeg",
     "https://newsite.themed.ro/uploads/galerie-foto/galerie-buc-5.jpeg",
   ],
-  address:["Str. Verzisori, nr. 20, Tineretului", "Luni - Vineri: 9AM–21PM", "40 743 754 125"]
+  address:["Str. Verzisori, nr. 74, Tineretului", "Luni - Vineri: 9AM–21PM", "40 743 754 125"]
 };
 
 const slatinaClinic = {

@@ -7,7 +7,7 @@ export const GoodToKnow = () => {
         <div className="flex flex-col gap-6 text-center md:items-start md:text-left ">
           <div className="flex md:gap-8 flex-col md:flex-row items-center">
             <AnimatedDiv element="div">
-              <Image src="https://newsite.themed.ro/uploads/filosofia/icon-1.png" width="100" height="130" alt="icon"  className="mb-6"/>
+              <Image src="https://newsite.themed.ro/uploads/filosofie/icon-1.png" width="100" height="130" alt="icon"  className="mb-6"/>
             </AnimatedDiv>
             <p className="w-full">
               Atunci când ne alegi, nu este nevoie să sacrifici calitatea
@@ -16,7 +16,7 @@ export const GoodToKnow = () => {
           </div>
           <div className="flex md:gap-8 flex-col md:flex-row items-center">
           <AnimatedDiv element="div">
-              <Image src="https://newsite.themed.ro/uploads/filosofia/icon-2.png" width="100" height="130" alt="icon" className="mb-6"/>
+              <Image src="https://newsite.themed.ro/uploads/filosofie/icon-2.png" width="100" height="130" alt="icon" className="mb-6"/>
             </AnimatedDiv>
             <p className="w-full">
               Misiunea noastră este să dezvoltăm relații pe termen lung cu
@@ -27,7 +27,7 @@ export const GoodToKnow = () => {
           </div>
           <div className="flex md:gap-8 flex-col md:flex-row items-center">
           <AnimatedDiv element="div">
-              <Image src="https://newsite.themed.ro/uploads/filosofia/icon-3.png" width="100" height="130" alt="icon" className="mb-6"/>
+              <Image src="https://newsite.themed.ro/uploads/filosofie/icon-3.png" width="100" height="130" alt="icon" className="mb-6"/>
             </AnimatedDiv>
             <p className="w-full">
               Pentru a ne menține promisiunea față de pacienți, utilizăm cele

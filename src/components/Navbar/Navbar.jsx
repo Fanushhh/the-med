@@ -192,6 +192,14 @@ export const Navbar = () => {
               <li>
                 <Link href="/info/laborator-dentar" onClick={() => closeDropdown("services")}>Laborator dentar</Link>
               </li>
+              <li>
+                  <NavLink
+                    setMenuState={setMenuState}
+                    href="/info/fatete-dentare"
+                  >
+                    Fațete dentare
+                  </NavLink>
+                </li>
             </ul>
           </div>
 
@@ -238,7 +246,7 @@ export const Navbar = () => {
               </summary>
               <ul
                 tabIndex={0}
-                className=" z-[1] menu gap-2 p-4 shadow rounded-box w-full !text-xl capitalize"
+                className=" z-[1] menu gap-2 p-4 rounded-box w-full !text-xl capitalize"
               >
                 <li>
                   <NavLink
@@ -300,7 +308,7 @@ export const Navbar = () => {
               </summary>
               <ul
                 tabIndex={0}
-                className=" z-[1] menu p-4 shadow  rounded-box w-full gap-3 !text-xl capitalize text-white"
+                className=" z-[1] menu p-4  rounded-box w-full gap-3 !text-xl capitalize text-white"
               >
                 <li>
                   <NavLink
@@ -364,6 +372,14 @@ export const Navbar = () => {
                     href="/info/laborator-dentar"
                   >
                     Laborator dentar
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    setMenuState={setMenuState}
+                    href="/info/fatete-dentare"
+                  >
+                    Fațete dentare
                   </NavLink>
                 </li>
               </ul>

@@ -26,7 +26,7 @@ export default function Page() {
             </AnimatedDiv>
             <AnimatedDiv className="w-full">
               <Image
-                src="https://newsite.themed.ro/uploads/laborator-1.png"
+                src="https://newsite.themed.ro/uploads/laborator/laborator-1.png"
                 width={500}
                 height={400}
                 alt="laborator dentar digital"
@@ -99,7 +99,7 @@ export default function Page() {
         <div className="w-full ">
           <Image
             className="w-full max-h-[300px]p"
-            src="https://newsite.themed.ro/uploads/laborator02.png"
+            src="https://newsite.themed.ro/uploads/laborator/laborator-2.png"
             alt="team of doctors"
             width={500}
             height={350}

@@ -7,7 +7,7 @@ import Link from "next/link";
 const ServicesData = [
   {
     imgSrc:
-      "https://site.themed.ro/uploads/images/top-servicii-implant-dentar-jpg_67DF.webp",
+      "https://newsite.themed.ro/uploads/top-servicii-implant-dentar-jpg_8DW6.jpg",
     title: "Implant Dentar",
     buttonUrl: "/info/implant-dentar-imediat",
   },
@@ -19,13 +19,13 @@ const ServicesData = [
   },
   {
     imgSrc:
-      "https://site.themed.ro/uploads/images/top-servicii-endodontie-jpg_6ZKF.webp",
+      "https://newsite.themed.ro/uploads/top-servicii-endodontie-jpg_6ZKF.jpg",
     title: "Endodonție ",
     buttonUrl: "/info/endodontie-la-microscop",
   },
   {
     imgSrc:
-      "https://site.themed.ro/uploads/images/top-servicii-parodontologie-jpg_G9P7.webp",
+      "https://newsite.themed.ro/uploads/top-servicii-parodontologie-jpg_G9P7.jpg",
     title: "Parodontologie",
     buttonUrl: "/info/parodontologie-laser",
   },

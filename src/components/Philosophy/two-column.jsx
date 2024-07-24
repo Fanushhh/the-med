@@ -7,7 +7,7 @@ export const TwoColumn = () => {
         <AnimatedDiv element="h-full">
           <Image
            className="md:h-[600px] w-full object-cover object-center"
-            src="https://site.themed.ro/images/filosofia_the_med.jpg"
+            src="https://newsite.themed.ro/uploads/filosofie/filosofia_the_med.jpeg"
             width={608}
             height={600}
             alt="Doua persoane una langa cealalta care zambesc la camera"

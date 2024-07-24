@@ -20,13 +20,16 @@ export async function POST(req) {
     const message = data.get("mentiuni");
     const email = data.get("email");
     const clinica = data.get("Clinica");
+    const gdprAccept = data.get("gdpr");
+    const gdprTimestamp = data.get("gdprTimestamp");
     
-    await transporter.sendMail({
+    transporter.sendMail({
       from: name,
       email:email,
       to: process.env.EMAIL,
       subject: "Mesaj nou de pe website-ul The Med",
-      text: `Nume si prenume: ${name}\nNumar de telefon: ${phoneNr}\nClinica:${clinica}\nMesaj: ${message}`,
+      text: `Nume si prenume: ${name}\nNumar de telefon: ${phoneNr}\nAdresa de email: ${email}\nClinica:${clinica}\nMesaj: ${message}\nAcord GDPR: ${gdprAccept ? 'Da' : 'Nu'}\nTimestamp: ${gdprTimestamp}`,
+      
     });
     return Response.json({
       message: `Email sent`,

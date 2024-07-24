@@ -1,0 +1,29 @@
+.mySwiper{
+    
+    margin: 40px 0;
+    position:relative;
+    min-height: 500px!important;
+    height: 100%!important;
+}
+
+
+.swiperTab{
+    background-color: black;
+    display:flex!important;
+    flex-direction: column;
+    
+    
+}
+
+
+
+
+@media (min-width: 768px) {
+    .mySwiper{
+        display:none!important;
+    }
+    .swiperTab{
+        padding:2rem!important;
+    }
+}
+

@@ -43,7 +43,7 @@ export default function EndodontiePage() {
         </div>
         <AnimatedDiv className="overflow-hidden w-full">
           <Image
-            src="https://newsite.themed.ro/uploads/endodontie-1.png"
+            src="https://newsite.themed.ro/uploads/endodontie/endodontie-1.jpg"
             alt="Chirurgie orala"
             width={600}
             height={400}
@@ -334,8 +334,8 @@ export default function EndodontiePage() {
       <section className="max-w-[1320px] mx-auto md:my-10 my-6">
         <div className="w-full ">
           <Image
-            className="w-full max-h-[300px]"
-            src="https://newsite.themed.ro/uploads/endo-team.png"
+            className="w-full max-h-[300px] object-cover"
+            src="https://newsite.themed.ro/uploads/endodontie/endo-team.jpg"
             alt="team of doctors"
             width={500}
             height={350}

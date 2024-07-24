@@ -1,16 +1,18 @@
 import { Hero } from "@/components/Hero/Hero";
 import Image from "next/image";
-import { ThreeBoxLayout } from "@/components/ThreeBoxLayout/ThreeBoxLayout";
-import { threeBoxLayoutData } from "./data";
 import { Testimonials } from "@/components/Testimonials/Testimonials";
 import { ProteticPlan } from "@/components/ProteticPlan/ProteticPlan";
 import { Form } from "@/components/Form/Form";
 import { AnimatedDiv } from "@/components/AnimatedDiv/AnimatedDiv";
+import { TabComponent } from "@/components/TabComponent/TabComponent";
+import { threeBoxLayoutData } from "./data";
 
 export const metadata = {
-  title: "Protetica și Estetica Dentară la The Med - Zâmbetul Perfect pentru Tine",
-  description: "Obține zâmbetul visurilor tale cu serviciile de protetică și estetică dentară de la The Med. Oferim soluții personalizate pentru restaurări dentare de înaltă calitate și estetică superioară. Programează o consultație astăzi.",
-}
+  title:
+    "Protetica și Estetica Dentară la The Med - Zâmbetul Perfect pentru Tine",
+  description:
+    "Obține zâmbetul visurilor tale cu serviciile de protetică și estetică dentară de la The Med. Oferim soluții personalizate pentru restaurări dentare de înaltă calitate și estetică superioară. Programează o consultație astăzi.",
+};
 
 const proteticaBenefits = {
   left: [
@@ -30,7 +32,7 @@ export default function Page() {
   return (
     <main>
       <Hero
-        heroImg="https://newsite.themed.ro/uploads/protetica/protetica-hero.jpeg"
+        heroImg="https://newsite.themed.ro/uploads/protetica/protetica-hero.jpg"
         heroHeading="Protetică și"
         heroSubHead="estetică dentară"
         subTitle="Estetică, funcționalitate și încredere într-un singur zâmbet"
@@ -40,7 +42,6 @@ export default function Page() {
           className={`p-4 md:p-10 max-w-[1320px]  justify-center  check-list flex w-full flex-col-reverse md:flex-row gap-4 mx-auto`}
         >
           <div className="*:mb-4 w-full mx-auto">
-          
             <p>
               Zâmbetul de revistă care respectă raportul de aur din lucrările
               lui Leonardo DaVinci este un deziderat în rândul oamenilor din
@@ -68,9 +69,8 @@ export default function Page() {
               deoarece îți asigură încrederea de a zâmbi nestingherit, confortul
               de a vorbi și mesteca și îmbunătățește calitatea vieții.
             </p>
-            
           </div>
-          
+
           <AnimatedDiv className="max-w-[1000px] w-full h-full">
             <Image
               width={1000}
@@ -87,17 +87,19 @@ export default function Page() {
           className={`p-4 md:px-0  items-center justify-between max-w-[1320px] md:*:w-1/2 flex flex-col md:flex-row gap-8 mx-auto`}
         >
           <AnimatedDiv className="md:max-w-[1000px]">
-          <Image
-            width={600}
-            height={500}
+            <Image
+              width={600}
+              height={500}
               src="https://newsite.themed.ro/uploads/protetica/protetica-2.png"
               alt="imagine protetica dentara"
               className=" w-full object-cover"
             />
           </AnimatedDiv>
           <div className="*:mb-4 self-start">
-          
-            <AnimatedDiv element="h2"  className="md:text-5xl text-2xl md:!mb-10 ">
+            <AnimatedDiv
+              element="h2"
+              className="md:text-5xl text-2xl md:!mb-10 "
+            >
               <span className="text-[var(--accent)]">Protetica dentară</span>,
               mai mult decât estetică și frumusețe
             </AnimatedDiv>
@@ -183,7 +185,6 @@ export default function Page() {
       </section>
       <section className=" flex items-center">
         <div className="max-w-[1320px] p-4 md:p-20 lg:px-0  mx-auto relative bg-protetica-bg-tooth bg-cover bg-no-repeat bg-bottom">
-        
           <AnimatedDiv element="h2" className="text-2xl md:text-5xl mb-6">
             <span className="text-[var(--accent)] ">Protetica dentară</span> nu
             este doar despre dinți albi
@@ -247,7 +248,11 @@ export default function Page() {
       <section className="bg-white flex items-center">
         <div className=" p-4 max-w-[1320px] my-4 lg:py-20 lg:px-0 mx-auto flex flex-col md:flex-row md:*:w-1/2 gap-8">
           <div className="*:mb-4">
-            <AnimatedDiv element="h2" addedDelay={.5} className="text-2xl md:text-5xl ">
+            <AnimatedDiv
+              element="h2"
+              addedDelay={0.5}
+              className="text-2xl md:text-5xl "
+            >
               Protetica dentara{" "}
               <span className="text-[var(--accent)]">digitala</span>
             </AnimatedDiv>
@@ -304,27 +309,25 @@ export default function Page() {
           </AnimatedDiv>
         </div>
       </section>
-      <section className="">
-          {
-            threeBoxLayoutData.map((data, index) => {
-              return (
-                <ThreeBoxLayout
-                  key={index}
-                  title={data.title}
-                  description={data.description}
-                  bigDescription={data.bigDescription}
-                  listItems={data.listItems}
-                  imgUrl={data.imgUrl}
-                  colReversed={data.colReversed}
-                  bgColor={data.bgColor}
-                  checkList="check-list"
-                  descriptionStyle={data.descriptionStyle}
-                  titleStyling={data.titleStyling}
-                  
-                />
-              );
-            })
-          }
+      <section className="max-w-[1320px] w-full mx-auto">
+        <h1 className="text-5xl text-[var(--accent)] text-center mb-10">Tipuri de lucrări protetice</h1>
+        <TabComponent tabs={threeBoxLayoutData}/>
+      </section>
+      <section className="mx-auto my-10 max-w-[1320px] flex flex-col md:flex-row md:*:w-1/2">
+                <div>
+                  <Image src="https://newsite.themed.ro/uploads/protetica/protetica-three-5.png" alt="Estetica gingivala" width={700} height={1000} className="w-full h-full"/>
+                </div>
+                <div className="bg-[var(--accent)] p-10 check-list">
+                <h2 className="text-3xl md:text-5xl mb-6">Estetica gingivală</h2>
+                  <p className="mb-4">Pe lângă lucrările estetice realizate la nivelul dinților, pot fi realizate și alte intervenții în scop estetic în cabinetul stomatologic:</p>
+                  <ul>
+                    <li>alungiri coronare în scop estetic, pentru dinții prea scurți sau abrazați, cu scopul de a reintegra dinții  pe arcadă</li>
+                    <li>gingivoplastii pentru remodelarea conturului  gingival prin excizia țesutului în exces (gummy smile)</li>
+                    <li>remodelare gingivală estetică pentru a restabili proporția ideală dintre vizibilitatea dinților și a gingiei</li>
+                    <li>refacerea simetriei gingivale prin alungiri coronare sau grefe gingivale ( pentru dinții cu retracții gingivale, sau care au suferit un tratament parodontal)</li>
+                  </ul>
+                  <p className="font-bold">Cu aplicabilitate extinsă în stomatologie, obiectivul de bază al esteticii dentare rămâne sănătatea îndelungată a dinților și gingiilor, astfel încât pacienții să poată zâmbi fără restricții, să poată mânca și comunica fără probleme.</p>
+                </div>
       </section>
       <ProteticPlan />
       <Testimonials />

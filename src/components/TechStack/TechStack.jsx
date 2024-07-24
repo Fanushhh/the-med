@@ -67,7 +67,7 @@ export const TechStack = () => {
               key={index}
               className="flex flex-col items-center gap-4 my-4 w-[300px] md:h-[150px] "
             >
-            <Link href={`#${tech.id}`} className="hover:border-transparent flex flex-col items-center gap-4 my-4 w-[300px] md:h-[150px] ">
+            <Link href="#" className="hover:border-transparent flex flex-col items-center gap-4 my-4 w-[300px] md:h-[150px] ">
               <Image width={100} height={100} src={tech.icon} alt={tech.name} />
               <p dangerouslySetInnerHTML={{ __html: tech.name }}></p>
               </Link>

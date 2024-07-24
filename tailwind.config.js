@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     screens: {
       sm: "640px",
+      tb:"768px",
       md: "1200px",
       lg: "1440px",
     },
@@ -17,7 +18,7 @@ module.exports = {
         "hero-img":
           "linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url('https://newsite.themed.ro/uploads/home-hero.jpg');",
         "help-img":
-          "linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url('https://site.themed.ro/images/gallery3.jpg');",
+          "linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url('https://newsite.themed.ro/uploads/m3.jpeg');",
         "difference-img":
           "url('https://newsite.themed.ro/uploads/filosofia/differences.png')",
         "implant-img":
@@ -40,6 +41,7 @@ module.exports = {
           "url('https://newsite.themed.ro/uploads/laborator/laborator-bg-1.png')",
         "laborator-bg-2":
           "url('https://newsite.themed.ro/uploads/laborator/laborator-bg-2.jpg')",
+          "fatete-1": "url('https://newsite.themed.ro/uploads/fatete-dentare/digital-smile.png')"
       },
     },
     fontFamily: {

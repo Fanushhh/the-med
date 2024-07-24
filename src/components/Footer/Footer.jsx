@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer className="flex flex-col bg-black text-white font-Body ">
       <div className="footer p-6 md:p-10 max-w-[1400px] mx-auto !md:grid-flow-col">
         <aside>
-        <Image width={160} height={160} src="/images/logo-white.png" alt="The Med" className="w-20 h-10 md:w-40  md:h-20" />
+        <Image width={160} height={160} src="https://newsite.themed.ro/uploads/logo-white-v2.png" alt="The Med" className=" md:w-40  md:h-20" />
           <div className="my-4 *:mb-4">
             <p className=" ml-6 text-[var(--primary)]  text-xl">Bucuresti</p>
             <div className="flex gap-2">
@@ -17,7 +17,7 @@ export const Footer = () => {
               >
                 <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
               </svg>
-              <a href="https://maps.app.goo.gl/aFoZdGX9ZU1yUtAq9" target="_blank">Str. Verzișori, nr. 20, Tineretului</a>
+              <a href="https://maps.app.goo.gl/aFoZdGX9ZU1yUtAq9" target="_blank">Str. Verzișori, nr. 74, Tineretului</a>
             </div>
             <div className="flex gap-2">
               <svg
@@ -53,7 +53,7 @@ export const Footer = () => {
               >
                 <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
               </svg>
-              <a href="https://maps.app.goo.gl/aFoZdGX9ZU1yUtAq9" target="_blank">Strada Prelungirea Pitesti, nr.1B</a>
+              <a href="https://maps.app.goo.gl/gvcm1gbh2pVCRjXy8" target="_blank">Strada Prelungirea Pitesti, nr.1B</a>
             </div>
             <div className="flex gap-2">
               <svg

@@ -15,26 +15,26 @@ export const Locations = () => {
       <motion.div initial={{y:150, opacity:0}} transition={{duration:1}} animate={isInView ? {y:0, opacity:1}: {}} ref={locationsRef} className="flex flex-col-reverse items-center md:flex-row justify-center gap-8">
         <div className="  grid grid-cols-1 justify-items-center sm:grid-cols-2 gap-4 w-[580px] max-w-full px-50px">
           <Image
-            src="https://site.themed.ro/images/m1.jpg"
+            src="https://newsite.themed.ro/uploads/m1.webp"
             width={280}
             height={392}
             alt="Imagine care prezinta locattile noastre"
           />
           <Image
-            src="https://site.themed.ro/images/m2.jpg"
+            src="https://newsite.themed.ro/uploads/m2.webp"
             className=" sm:rounded-tr-[24px]"
             width={280}
             height={392}
             alt="Imagine care prezinta locattile noastre"
           />
           <Image
-            src="https://site.themed.ro/images/m3.jpg"
+            src="https://newsite.themed.ro/uploads/m3.webp"
             width={280}
             height={200}
             alt="Imagine care prezinta locattile noastre"
           />
           <Image
-            src="https://site.themed.ro/images/m4.jpg"
+            src="https://newsite.themed.ro/uploads/m4.webp"
             width={280}
             height={200}
             alt="Imagine care prezinta locattile noastre"
@@ -62,7 +62,7 @@ export const Locations = () => {
               >
                 <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
               </svg>
-              <a href="https://maps.app.goo.gl/aFoZdGX9ZU1yUtAq9" className="">Str. Verzișori, nr. 74, Tineretului</a>
+              <a href="https://maps.app.goo.gl/aFoZdGX9ZU1yUtAq9" target="_blank" className="">Str. Verzișori, nr. 74, Tineretului</a>
             </div>
             <div className="flex gap-2">
               <svg
@@ -105,7 +105,7 @@ export const Locations = () => {
               >
                 <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
               </svg>
-              <a href="https://maps.app.goo.gl/aFoZdGX9ZU1yUtAq9" target="_blank">Strada Prelungirea Pitesti, nr.1B</a>
+              <a href="https://maps.app.goo.gl/gvcm1gbh2pVCRjXy8" target="_blank">Strada Prelungirea Pitesti, nr.1B</a>
             </div>
             <div className="flex gap-2">
               <svg
@@ -131,7 +131,7 @@ export const Locations = () => {
             </div>
             <Link
               className="ml-auto block text-xl !font-Body text-[var(--accent)]"
-              href="https://maps.app.goo.gl/81omGkjKEkdt28Nw6"
+              href="https://maps.app.goo.gl/gvcm1gbh2pVCRjXy8"
               target="_blank"
             >
               Vezi locatia

@@ -55,7 +55,7 @@ export default function SurgeryPage() {
         </div>
         <AnimatedDiv className="overflow-hidden w-full p-4">
           <Image
-            src="https://newsite.themed.ro/uploads/screen.png"
+            src="https://newsite.themed.ro/uploads/chirurgie/screen.jpg"
             alt="Chirurgie orala"
             width={600}
             height={400}
@@ -85,7 +85,7 @@ export default function SurgeryPage() {
         <AnimatedDiv className="w-full">
           <Image
             className="w-full max-h-[455px] object-cover object-top"
-            src="https://newsite.themed.ro/uploads/team.png"
+            src="https://newsite.themed.ro/uploads/chirurgie/team.jpg"
             alt="team of doctors"
             width={500}
             height={250}
@@ -132,7 +132,7 @@ export default function SurgeryPage() {
         </div>
         <AnimatedDiv className="max-w-[600px]">
           <Image
-            src="https://newsite.themed.ro/uploads/man.png"
+            src="https://newsite.themed.ro/uploads/chirurgie/man.png"
             width={600}
             height={400}
             alt="man with his hands under his chin"

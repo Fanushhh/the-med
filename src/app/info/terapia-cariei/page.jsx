@@ -25,15 +25,15 @@ export default function Page() {
       />
       <section className="bg-white  flex items-center">
         <div
-          className={`p-4 md:px-0 md:py-10 items-center justify-between max-w-[1320px] md:*:w-1/2 flex flex-col md:flex-row-reverse md:justify-between w-full gap-8 mx-auto`}
+          className={`p-4 md:px-0 md:py-10 justify-between max-w-[1320px] md:*:w-1/2 flex flex-col md:flex-row-reverse md:justify-between w-full gap-8 mx-auto`}
         >
           <AnimatedDiv className="md:max-w-[1000px]">
             <Image
               width={600}
               height={500}
-              src="https://newsite.themed.ro/uploads/terapie-1.png"
+              src="https://newsite.themed.ro/uploads/terapie/terapie-1.jpg"
               alt="imagine protetica dentara"
-              className=" w-full object-cover"
+              className=" w-full object-cover h-full"
             />
           </AnimatedDiv>
           <div className="*:mb-4 max-w-[500px]">
@@ -74,7 +74,7 @@ export default function Page() {
         <div className="flex flex-col md:flex-row gap-4 md:justify-between">
           <div className="max-w-[400px] w-full">
             <Image
-              src="https://newsite.themed.ro/uploads/terapie-2.png"
+              src="https://newsite.themed.ro/uploads/terapie/terapie-2.png"
               width={600}
               height={500}
               alt="stadiile cariei dentare"
@@ -145,12 +145,12 @@ export default function Page() {
             return <FlipBox key={index} front={item.front}  back={item.back} frontColor={item.frontColor} backColor={item.backColor}/>;
           })}
           <div className="bg-[var(--primary)] flex items-center justify-center p-4">
-            <Image
+            {/* <Image
             width={160}
             height={160}
-              src="https://site.themed.ro/images/s4.svg"
+              src="https://newsite.themed.ro/uploads/s4.svg"
               alt="smiley face"
-            />
+            /> */}
           </div>
         </div>
         <div className="md:max-w-[500px] p-4 md:p-8 *:mb-4">
@@ -191,7 +191,7 @@ export default function Page() {
         </div>
         <AnimatedDiv className="overflow-hidden w-full p-4 md:max-w-[700px]">
           <Image
-            src="https://newsite.themed.ro/uploads/terapie-3.png"
+            src="https://newsite.themed.ro/uploads/terapie/terapie-3.png"
             alt="Chirurgie orala"
             width={600}
             height={400}

@@ -27,7 +27,7 @@ export default function Page() {
             <Image
               width={600}
               height={500}
-              src="https://newsite.themed.ro/uploads/igiena-1.png"
+              src="https://newsite.themed.ro/uploads/igienizare/igiena-1.jpg"
               alt="imagine protetica dentara"
               className=" w-full object-cover "
             />
@@ -89,7 +89,7 @@ export default function Page() {
         </div>
         <AnimatedDiv className="overflow-hidden w-full md:max-w-[700px]">
           <Image
-            src="https://newsite.themed.ro/uploads/igiena-2.png"
+            src="https://newsite.themed.ro/uploads/igienizare/igiena-2.png"
             alt="Chirurgie orala"
             width={600}
             height={400}
@@ -179,7 +179,7 @@ export default function Page() {
         </div>
         <AnimatedDiv className="w-full ">
           <Image
-            src="https://newsite.themed.ro/uploads/igiena-3.png"
+            src="https://newsite.themed.ro/uploads/igienizare/igienizare-3.png"
             alt="Chirurgie orala"
             width={600}
             height={400}

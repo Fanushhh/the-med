@@ -381,7 +381,9 @@ input:-webkit-autofill:active {
 .swiper {
   overflow: visible;
 }
-
+.fateteSwiper .swiper-wrapper{
+  padding:0!important;
+}
 .perkIcon {
   margin-bottom: 30px;
   width: 80px;
@@ -397,10 +399,21 @@ input:-webkit-autofill:active {
 
 
 }
-
+.tabBullet{
+  background-color: var(--accent)!important;
+  opacity: .5;
+  width: 15px;
+  height: 15px;
+  margin-bottom:2rem;
+  display:inline-block;
+  border-radius: 50%;
+  margin-right:8px;
+  cursor: pointer;
+}
 .swiper-pagination {
   bottom: 0 !important;
 }
+
 
 .swiper-button-prev,
 .swiper-button-next {

@@ -1,11 +1,11 @@
 export const threeBoxLayoutData = [
   {
-    title: "Tipuri de lucrări protetice:",
-    description:
-      "Fațete dentare",
-      bgColor:'bg-[var(--accent)]',
-      descriptionStyle:'text-[var(--accent)] text-center text-4xl font-bold font-Heading ',
-      titleStyling: 'text-black text-center pb-10',
+    title: "Fațete dentare",
+    description: "",
+    bgColor: "bg-[var(--accent)]",
+    descriptionStyle:
+      "text-[var(--accent)] text-center text-4xl font-bold font-Heading ",
+    titleStyling: "text-black text-center pb-10",
     listItems: [
       "Tratează problemele de estetică dentară precum dinți ciobiți, inegali, asimetrici, cu mici spații interdentare, cu pete sau în nuanțe gălbui sau cenușii etc.",
       "Sunt realizate în laboratorul dentar din materiale solide și durabile, care rezistă la uzură, precum ceramica presată, stratificată sau frezată: Emax, Empress etc.",
@@ -20,9 +20,8 @@ export const threeBoxLayoutData = [
   },
   {
     title: "Coroane dentare",
-    description:
-      "",
-      bgColor:'bg-[var(--accent)]',
+    description: "",
+    bgColor: "bg-[var(--accent)]",
     listItems: [
       "sunt lucrări protetice cu aspectul similar unei capsule de protecție pentru un dinte natural care a suferit un tratament de canal din cauza unei carii profunde, o fractură sau un alt tip de afecțiune care i-a slăbit structura naturală",
       "sunt utilizate pentru a încărca un implant dentar, pentru a oferi estetică și funcționalitate dintelui nou",
@@ -37,9 +36,8 @@ export const threeBoxLayoutData = [
   },
   {
     title: "Lucrări protetice pe implanturi",
-    description:
-      "",
-      bgColor:'bg-[var(--accent)]',
+    description: "",
+    bgColor: "bg-[var(--accent)]",
     listItems: [
       "materialele utilizate în clinica dedntară The Med, precum zirconiul și titanul, sun biocompatibile cu organismul",
       "sunt concepute special pentru a îndeplini normele biomecanice ale implanturilor utilizate și a proteja pe termen lung gingia și osul",
@@ -51,10 +49,10 @@ export const threeBoxLayoutData = [
     colReversed: false,
   },
   {
-    title: "Lucrările de arcadă, pe implanturi, tip All on 4, cu infrastructură din titan ",
-    bgColor:'bg-[var(--accent)]',
-    description:
-      "",
+    title:
+      "Lucrările de arcadă, pe implanturi, tip All on 4, cu infrastructură din titan ",
+    bgColor: "bg-[var(--accent)]",
+    description: "",
     listItems: [
       "sunt biocompatibile cu organismul, adică sunt foarte ușor tolerate și integrate de organism, nu cauzează reacții adverse sau alergice ",
       "lucrările protetice realizate cu baza din titan au cel mai înalt grad de rezistență la fractură, uzură și coroziune, rezistă cu succes pe termen lung chiar și la forțe masticatorii puternice",
@@ -63,22 +61,6 @@ export const threeBoxLayoutData = [
     ],
     imgUrl: "https://newsite.themed.ro/uploads/protetica/protetica-three-4.png",
     colReversed: true,
-  },
-  {
-    title: "Estetica gingivală",
-    description:
-      "",
-      bgColor:'bg-[var(--accent)]',
-      bigDescription:["Pe lângă lucrările estetice realizate la nivelul dinților, pot fi realizate și alte intervenții în scop estetic în cabinetul stomatologic:"],
-    listItems: [
-      "alungiri coronare în scop estetic, pentru dinții prea scurți sau abrazați, cu scopul de a reintegra dinții  pe arcadă",
-      "gingivoplastii pentru remodelarea conturului  gingival prin excizia țesutului în exces (gummy smile)",
-      "remodelare gingivală estetică pentru a restabili proporția ideală dintre vizibilitatea dinților și a gingiei",
-      "refacerea simetriei gingivale prin alungiri coronare sau grefe gingivale ( pentru dinții cu retracții gingivale, sau care au suferit un tratament parodontal)",
-    ],
-    lastParagraph:"Cu aplicabilitate extinsă în stomatologie, obiectivul de bază al esteticii dentare rămâne sănătatea îndelungată a dinților și gingiilor, astfel încât pacienții să poată zâmbi fără restricții, să poată mânca și comunica fără probleme.",
-    imgUrl: "https://newsite.themed.ro/uploads/protetica/protetica-three-5.png",
-    colReversed: false,
   },
   
 ];

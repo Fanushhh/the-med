@@ -12,7 +12,7 @@ export const locationsData = {
             schedule:'Luni - Vineri: 9AM – 21PM'
         },
         photos:[
-            "https://site.themed.ro/images/m1s.jpg", "https://site.themed.ro/images/m2s.jpg", "https://site.themed.ro/images/m3s.jpg", "https://site.themed.ro/images/m4s.jpg"
+            "https://newsite.themed.ro/uploads/m1.jpg", "https://newsite.themed.ro/uploads/m2.jpg", "https://newsite.themed.ro/uploads/m3.jpg", "https://newsite.themed.ro/uploads/m4.jpg"
         ]
     },
     bucuresti:{
@@ -26,7 +26,7 @@ export const locationsData = {
             schedule:'Luni - Vineri: 9AM – 21PM'
         },
         photos:[
-            "https://site.themed.ro/images/m1.jpg", "https://site.themed.ro/images/m2.jpg", "https://site.themed.ro/images/m3.jpg", "https://site.themed.ro/images/m4.jpg"
+            "https://newsite.themed.ro/uploads/m1.jpg", "https://newsite.themed.ro/uploads/m2.jpg", "https://newsite.themed.ro/uploads/m3.jpg", "https://newsite.themed.ro/uploads/m4.jpg"
         ]
     }
 }

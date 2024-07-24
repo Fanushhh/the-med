@@ -3,7 +3,7 @@ import { Hero } from "@/components/Hero/Hero";
 import { TechStack } from "@/components/TechStack/TechStack";
 import { ThreeBoxLayout } from "@/components/ThreeBoxLayout/ThreeBoxLayout";
 import { Help } from "@/components/Help/Help";
-
+import { TabComponent } from "@/components/TabComponent/TabComponent";
 export const metadata = {
   title: "Tehnologii Dentare de Ultimă Generație la The Med",
   description: "Descoperă inovațiile tehnologice din stomatologie la The Med. Folosim echipamente de ultimă generație pentru a oferi tratamente precise și eficiente. Află cum tehnologia modernă îți poate îmbunătăți sănătatea orală.",
@@ -64,23 +64,23 @@ const threeBoxLayoutData = [
     colReversed: false,
     isEven:true,
   },
-  {
-    id:'',
-    title: "",
-    bgColor:"bg-black text-white",
-    description:
-      "Eficiența de neegalat este una din caracteristicile remarcabile ale scanerului intraoral Medit i700. Tehnologia avansată asigură acuratețea datelor scanate și că elementele de protetică dentară se vor potrivi perfect.",
-    bigDescription: [
-      "În tot acest proces de scanare a cavității bucale, siguranța și confortul pacientului sunt și ele beneficii ale tehnologiei de scanare digitală.",
-      "Scanerul nu produce radiații dăunătoare în timpul procesului de scanare și nu este nevoie de material de amprentare care să creeze disconfort pacientului, sau să rămână lipit de dinții acestuia.",
-      "Amprentele digitale se pot folosi în numeroase tratamente stomatologice printre care enumerăm: coroane și fațete dentare, punți dentare, lucrări protetice cu suport implantar.",
-      "De asemenea, scanarea intraorală se folosește atât în tratamentul ortodontic, cât și în tratamentele chirurgicale, prin combinarea tomografiilor digitale realizate cu ajutorul CBCT-ului cu datele scanării intraorale.",
-      "Astfel, se pot realiza ghiduri chirurgicale digitale pentru intervențiile cu implanturi dentare care asigură predictibilitatea tratamentului.",
-    ],
-    imgUrl: "https://newsite.themed.ro/uploads/tehnologii-digitale/three-box-4.png",
-    colReversed: true,
-    isEven:true,
-  },
+  // {
+  //   id:'',
+  //   title: "",
+  //   bgColor:"bg-black text-white",
+  //   description:
+  //     "Eficiența de neegalat este una din caracteristicile remarcabile ale scanerului intraoral Medit i700. Tehnologia avansată asigură acuratețea datelor scanate și că elementele de protetică dentară se vor potrivi perfect.",
+  //   bigDescription: [
+  //     "În tot acest proces de scanare a cavității bucale, siguranța și confortul pacientului sunt și ele beneficii ale tehnologiei de scanare digitală.",
+  //     "Scanerul nu produce radiații dăunătoare în timpul procesului de scanare și nu este nevoie de material de amprentare care să creeze disconfort pacientului, sau să rămână lipit de dinții acestuia.",
+  //     "Amprentele digitale se pot folosi în numeroase tratamente stomatologice printre care enumerăm: coroane și fațete dentare, punți dentare, lucrări protetice cu suport implantar.",
+  //     "De asemenea, scanarea intraorală se folosește atât în tratamentul ortodontic, cât și în tratamentele chirurgicale, prin combinarea tomografiilor digitale realizate cu ajutorul CBCT-ului cu datele scanării intraorale.",
+  //     "Astfel, se pot realiza ghiduri chirurgicale digitale pentru intervențiile cu implanturi dentare care asigură predictibilitatea tratamentului.",
+  //   ],
+  //   imgUrl: "https://newsite.themed.ro/uploads/tehnologii-digitale/three-box-4.png",
+  //   colReversed: true,
+  //   isEven:true,
+  // },
   {
     id: "MicroscopulDentarCJOptikAdvancedOptomic5",
     title: "Microscopul dentar CJ Optik Advanced, Optomic 5",
@@ -177,11 +177,9 @@ export default function TechPage() {
         heroSubHead="pentru zâmbete perfecte"
       />
       <TechStack />
-      <div className="my-10">
-        {threeBoxLayoutData.map((data, index) => (
-          <ThreeBoxLayout key={index} {...data} />
-        ))}
-      </div>
+      <section className="max-w-[1320px] mx-auto my-10">
+      <TabComponent fullWidthImg={true} tabs={threeBoxLayoutData}/>
+      </section>
       <Help />
       <Testimonials />
     </main>

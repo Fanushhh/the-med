@@ -33,7 +33,7 @@ export const Hero = ({
           )}
         </h1>
         <p className="md:text-2xl my-4">{subTitle}</p>
-        <div className="flex flex-col items-center *:max-w-[250x] justify-start gap-4 mt-4 md:flex-row font-bold">
+        <div className="flex flex-col items-center *:max-w-[250px] *:w-full justify-start gap-4 mt-4 md:flex-row font-bold">
           <Link href="/info/programare" className="bg-[var(--accent)] px-4 py-2  hover:bg-[var(--accent-hover)] rounded text-xl">
             Programare online
           </Link>

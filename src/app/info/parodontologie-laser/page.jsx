@@ -20,7 +20,7 @@ export default function Page() {
         center={true}
         subTitle="Tratăm dinții și gingiile pacienților în mod minim invaziv"
       />
-      <section className="max-w-[1320px] bg-[var(--primary)] w-full mx-auto flex flex-col md:flex-row gap-6 justify-between items-center md:*:w-1/2 p-4 my-6 md:my-10 md:p-10 ">
+      <section className="max-w-[1320px] bg-[var(--primary)] w-full mx-auto flex flex-col md:flex-row gap-6 justify-between md:*:w-1/2 p-4 my-6 md:my-10 md:p-10 ">
         <div className=" *:pb-4  md:self-start md:max-w-[550px]">
           <AnimatedDiv  element="h2" className="text-3xl md:text-5xl md:mb-10">
             <span className="text-white">Boala parodontală,</span> ucigașul
@@ -44,11 +44,11 @@ export default function Page() {
         </div>
         <AnimatedDiv className="overflow-hidden w-full">
           <Image
-            src="https://newsite.themed.ro/uploads/parodontologie-1.png"
+            src="https://newsite.themed.ro/uploads/parodontologie/parodontologie-1.jpg"
             alt="Chirurgie orala"
             width={600}
             height={400}
-            className=" w-full object-cover"
+            className=" w-full object-cover !h-full"
           />
         </AnimatedDiv>
       </section>
@@ -86,7 +86,7 @@ export default function Page() {
               </li>
             </ul>
             <Image
-              src="https://newsite.themed.ro/uploads/parodontologie-2.png"
+              src="https://newsite.themed.ro/uploads/parodontologie/parodontologie-2.png"
               alt="Chirurgie orala"
               width={400}
               height={200}
@@ -258,7 +258,7 @@ export default function Page() {
       <section className="p-4 md:p-10 md:my-10 flex flex-col bg-chirurgie-bg-1 bg-no-repeat bg-cover">
         <div className="max-w-[1320px] mx-auto py-14">
           <AnimatedDiv element="h2" className="text-3xl mb-4 md:text-5xl md:mb-10 md:max-w-[750px]">
-            <span className="text-white">
+            <span className="text-[var(--primary)]">
               Beneficiile laserului stomatologic{" "}
             </span>
             în tratamentul parodontal:
@@ -376,7 +376,7 @@ export default function Page() {
         <AnimatedDiv className="w-full">
           <Image
             className="w-full max-h-[455px] object-contain object-top"
-            src="https://newsite.themed.ro/uploads/parodontologie-4.png"
+            src="https://newsite.themed.ro/uploads/parodontologie/parodontologie-4.jpg"
             alt="team of doctors"
             width={500}
             height={250}

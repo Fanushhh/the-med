@@ -2,6 +2,7 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 export const Form = () => {
   const {
     register,
@@ -10,7 +11,7 @@ export const Form = () => {
     formState: { errors },
   } = useForm();
   const [isSubmitted, setIsSubmitted] = useState(false);
-  
+  console.log(errors);
   const onSubmit = async (data) => {
     const formData = new FormData();
     formData.append("name", data.name);
@@ -18,6 +19,9 @@ export const Form = () => {
     formData.append("email", data.email);
     formData.append("Clinica", data.Clinica);
     formData.append("mentiuni", data.mentiuni);
+    formData.append("gdpr", data.gdprCheckbox);
+
+    formData.append("gdprTimestamp", new Date().toISOString());
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -44,7 +48,7 @@ export const Form = () => {
           height={850}
           width={600}
           className="w-full h-[300px] object-cover md:h-full"
-          src="https://newsite.themed.ro/uploads/the-med.png"
+          src="https://newsite.themed.ro/uploads/the-med.webp"
           alt="poza cu logo-ul clinicii"
         />
       </div>
@@ -72,7 +76,7 @@ export const Form = () => {
             <label htmlFor="name">Nume Prenume*</label>
             <input
               {...register("name", {
-                required: 'Campul este obligatoriu',
+                required: "Campul este obligatoriu",
                 maxLength: {
                   value: 25,
                   message: "Numele trebuie sa contina maxim 25 de caractere",
@@ -82,40 +86,55 @@ export const Form = () => {
                   message: "Numele trebuie sa contina minim 5 caractere",
                 },
               })}
-              placeholder="Nume si prenume"
               type="text"
             />
-            <p className="text-[var(--accent)] text-start">{errors.name?.message}</p>
+            <p className="text-[var(--accent)] text-start">
+              {errors.name?.message}
+            </p>
           </fieldset>
           <fieldset className=" flex flex-col gap-4 border-white">
             <label htmlFor="phoneNr">Telefon*</label>
             <input
-              {...register("phoneNr", { required: 'Campul este obligatoriu', maxLength: 12 })}
-              placeholder="+40 700 000 000"
+              {...register("phoneNr", {
+                required: "Campul este obligatoriu",
+                maxLength: 12,
+              })}
               type="text"
             />
-            <p className="text-[var(--accent)] text-start">{errors.phoneNr?.message}</p>
+            <p className="text-[var(--accent)] text-start">
+              {errors.phoneNr?.message}
+            </p>
           </fieldset>
           <fieldset className=" flex flex-col gap-4 border-white">
             <label htmlFor="email">E-mail*</label>
             <input
-              {...register("email", { required: 'Campul este obligatoriu' })}
-              placeholder="nume.prenume@email.com"
+              {...register("email", { required: "Campul este obligatoriu" })}
               type="email"
             />
-             <p className="text-[var(--accent)] text-start">{errors.email?.message}</p>
+            <p className="text-[var(--accent)] text-start">
+              {errors.email?.message}
+            </p>
           </fieldset>
           <fieldset className=" flex relative flex-col gap-4 border-white">
             <select
-              {...register("Clinica", { required: 'Alege clinica' })}
-              className="select  select-ghost w-full text-center text-lg border-b border-white"
+              {...register("Clinica", { required: "Alege clinica" })}
+              className="select  select-ghost w-full text-center text-lg"
             >
               <option value="">Selecteaza clinica </option>
               <option value="Bucuresti">Bucuresti</option>
               <option value="Slatina">Slatina</option>
             </select>
-            <p className="text-[var(--accent)] text-start">{errors.Clinica?.message}</p>
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 absolute right-16 top-4 md:right-1/3 " fill="#000" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            <p className="text-[var(--accent)] text-start">
+              {errors.Clinica?.message}
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-4 h-4 absolute right-16 top-4 md:right-1/3 "
+              fill="#000"
+              viewBox="0 0 512 512"
+            >
+              <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+            </svg>
           </fieldset>
           <fieldset className=" flex flex-col ">
             <label htmlFor="mentiuni"></label>
@@ -123,11 +142,35 @@ export const Form = () => {
               {...register("mentiuni", { required: false })}
               name="mentiuni"
               className="w-full border-b border-white"
-              placeholder="Adauga detalii..."
               id="mentiuni"
             ></textarea>
           </fieldset>
-          <button className="bg-[var(--accent)] w-1/2 mx-auto py-2 mt-5 hover:bg-[var(--accent-hover)]">
+          <fieldset className="flex items-center mb-4">
+            <input
+              type="checkbox"
+              id="gdprCheckbox"
+              {...register("gdprCheckbox", { required: "Acordul este obligatoriu" })}
+              className="mr-2 form-checkbox h-6 w-6 text-[var(--accent)] checked:bg-pink-500"
+            />
+            <label
+              htmlFor="gdprCheckbox"
+              className="text-sm text-gray-700 text-left w-full"
+            >
+              Sunt de acord cu prelucrarea datelor mele personale conform{" "}
+              <Link
+                href="/politica-confidentialitate"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-pink-500 underline"
+              >
+                Politicii de Confidențialitate.
+              </Link>
+              {" "}Înțeleg că aceste date vor fi trimise prin e-mail și nu vor fi
+              stocate într-o bază de date.
+              <p className="text-[var(--accent)] text-start">{errors.gdprCheckbox?.message}</p>
+            </label>
+          </fieldset>
+          <button className="bg-[var(--accent)] px-6 rounded-lg mx-auto py-2 mt-5 hover:bg-[var(--accent-hover)]">
             Trimite
           </button>
         </form>

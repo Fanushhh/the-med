@@ -11,32 +11,32 @@ const testimonialData = [
   {
     name: "Remus B.",
     text: " Lucrarea mea dentară a fost complexă și eu, evident, am fost anxios si temator la început. Mă bucur că am ales echipa The Med, m-au ajutat să trec peste toate fricile și mi-au dat încrederea să continui și să finalizez tot tratamentul. Poate, dacă nu erau ei, renunțam pe moment. Apreciez îndeosebi profesionalismul și dedicarea dr. Flavia Fugel, care mi-a coordonat cazul, dar și întregii echipe The Med!",
-    image: "https://newsite.themed.ro/uploads/protetica/testimonial-1.jpg",
+    image: "https://newsite.themed.ro/uploads/testimonial-1.webp",
   },
   {
     name: "Carina I.",
     text: "Am ajuns la clinica The Med după multe căutări pentru că îmi doream să mă simt în siguranță. Și asta s-întâmplat de la prima consultație. Modul profesionist în care s-a prezentat doamna doctor, răbdarea pe care a avut-o de a-mi explica problemele și tratamentul, dar și grija față de nevoile mele m-au făcut să mă simt pe mâini bune. Acum zâmbesc de voie, mulțumesc The Med!",
-    image: "https://newsite.themed.ro/uploads/protetica/testimonial-2.jpg",
+    image: "https://newsite.themed.ro/uploads/testimonial-2.webp",
   },
   {
     name: "Rodica S.",
     text: " Recomand cu toată încrederea echipa The Med și pe dr. Diana Duțu. Este cu adevărat un mediu profesionist, cu medici empatici care țin cont de nevoile și dorințele pacientilor. Au tehnologii și aparatură modernă, nu am așteptat foarte mult timp până am finalizat lucrarea și am fost relaxat pe tot parcursul tratamentului, deși am avut un caz mai complex! Vă mulțumesc!",
-    image: "https://newsite.themed.ro/uploads/protetica/testimonial-3.jpg",
+    image: "https://newsite.themed.ro/uploads/testimonial-3.webp",
   },
   {
     name: "Remus B.",
     text: " Lucrarea mea dentară a fost complexă și eu, evident, am fost anxios si temator la început. Mă bucur că am ales echipa The Med, m-au ajutat să trec peste toate fricile și mi-au dat încrederea să continui și să finalizez tot tratamentul. Poate, dacă nu erau ei, renunțam pe moment. Apreciez îndeosebi profesionalismul și dedicarea dr. Flavia Fugel, care mi-a coordonat cazul, dar și întregii echipe The Med!",
-    image: "https://newsite.themed.ro/uploads/protetica/testimonial-1.jpg",
+    image: "https://newsite.themed.ro/uploads/testimonial-1.webp",
   },
   {
     name: "Carina I.",
     text: "Am ajuns la clinica The Med după multe căutări pentru că îmi doream să mă simt în siguranță. Și asta s-întâmplat de la prima consultație. Modul profesionist în care s-a prezentat doamna doctor, răbdarea pe care a avut-o de a-mi explica problemele și tratamentul, dar și grija față de nevoile mele m-au făcut să mă simt pe mâini bune. Acum zâmbesc de voie, mulțumesc The Med!",
-    image: "https://newsite.themed.ro/uploads/protetica/testimonial-2.jpg",
+    image: "https://newsite.themed.ro/uploads/testimonial-2.webp",
   },
   {
     name: "Rodica S.",
     text: " Recomand cu toată încrederea echipa The Med și pe dr. Diana Duțu. Este cu adevărat un mediu profesionist, cu medici empatici care țin cont de nevoile și dorințele pacientilor. Au tehnologii și aparatură modernă, nu am așteptat foarte mult timp până am finalizat lucrarea și am fost relaxat pe tot parcursul tratamentului, deși am avut un caz mai complex! Vă mulțumesc!",
-    image: "https://newsite.themed.ro/uploads/protetica/testimonial-3.jpg",
+    image: "https://newsite.themed.ro/uploads/testimonial-3.webp",
   },
 ];
 export const Testimonials = () => {

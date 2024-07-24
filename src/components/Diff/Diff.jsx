@@ -40,7 +40,7 @@ export const ImageDifferenceSlider = ({ image1, image2 }) => {
               />
             </div>
             
-                <Link href="#" className="py-2 px-6 mx-auto text-white hover:rounded-3xl hover:bg-[var(--accent-hover)] rounded-3xl bg-[var(--accent)]">Vezi povestea</Link>
+                {/* <Link href="#" className="py-2 px-6 mx-auto text-white hover:rounded-3xl hover:bg-[var(--accent-hover)] rounded-3xl bg-[var(--accent)]">Vezi povestea</Link> */}
             
         </div>
     

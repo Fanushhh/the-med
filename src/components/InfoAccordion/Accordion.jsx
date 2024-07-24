@@ -10,7 +10,6 @@ export const InfoAccordion = ({
   primaryFirst,
 }) => {
   const [openFaq, setOpenFaq] = useState(data);
-  const [modal, setModal] = useState(false);
   const handleClick = (index) => {
     setOpenFaq((prev) => {
       const newArr = prev.map((faq, i) => {
